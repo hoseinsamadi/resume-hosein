@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpRequest, HttpResponse, JsonResponse
 
-# Create your views here.
+def http_index(request):
+    return HttpResponse('<h1>hosein</h1>') 
+
