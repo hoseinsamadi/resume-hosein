@@ -13,12 +13,6 @@ def http_contact(request):
 def http_education(request):
     return render(request,'website/education.html')
 
-def http_portfolioDetails(request):
-    return render(request,'website/portfolio-details.html')
-
-def http_portfolio(request):
-    return render(request,'website/portfolio.html')
-
 def http_pricing(request):
     return render(request,'website/pricing.html')
 
