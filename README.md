@@ -13,6 +13,7 @@
 باید با استفاده از دستور
 <br/>
 source .env/bin/activate
+<br/>
 حالا باید کتابخانه های این پروژه را نصب کنید 
 <br/>
 pip install -r requirements.txt
