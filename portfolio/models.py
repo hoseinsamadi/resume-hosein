@@ -13,3 +13,7 @@ class Portfolio(models.Model):
     published_date_portfolio = models.DateTimeField(null=True)
     created_date_portfolio = models.DateTimeField(auto_now_add=True, null=True)
     updates_date_portfolio = models.DateTimeField(auto_now_add=True, null=True)
+    
+    
+    def __str__(self):
+        return self.title_portfolio

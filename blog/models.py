@@ -17,3 +17,8 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True, null=True)
     updates_date = models.DateTimeField(auto_now_add=True, null=True)
     # Comment
+    
+    
+    def __str__(self):
+        return self.title
+    
