@@ -27,7 +27,8 @@
                                 <div class="cm-blogs">
                                     <div class="cm-blog-area">
                                         <!-- single blog item -->
-                                        {% for post in posts %}
+                                         <!-- {{posts}} -->
+                                        {% for posts in posts %}
                                         <div class="single-blog-item">
                                             <a href="{% url 'blog:blogDetails' %}" class="single-blog-item__single">
                                                 <img src="{% static 'img/blog/01.jpg' %}" alt="blog">
@@ -37,9 +38,10 @@
                                                 <span class="date"><img src="{% static 'img/icons/calendar.svg' %}" alt="calendar"> 9 اردیبهشت 1403 4</span>
                                             </div>
                                             <h4 class="blog-title">
-                                                <a href="#">{{Posts.title}}</a>
+                                                <a href="#">{{posts.title}}</a>
                                             </h4>
-                                            <P>12</P>
+                                            <P>{{posts.content}}</P>
+                                            
                                         </div>
                                         <!-- single blog item end -->
                                          {% endfor %}
