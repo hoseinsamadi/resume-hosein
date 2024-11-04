@@ -17,8 +17,11 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True, null=True)
     updates_date = models.DateTimeField(auto_now_add=True, null=True)
     # Comment
-    
-    
+    class Meta:
+        ordering = ['created_date']
+        #verbose_name = 'پست'
+        #verbose_name_plural = 'پست ها'
+
     def __str__(self):
         return self.title
     
