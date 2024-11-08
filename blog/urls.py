@@ -6,6 +6,6 @@ app_name = 'blog'
 
 urlpatterns = [
     path('',http_blog, name='blog'),
-    path('details',http_blogDetails, name='blogDetails'),
+    path('/<int:pid>',http_blogDetails, name='blogDetails'),
 
 ]

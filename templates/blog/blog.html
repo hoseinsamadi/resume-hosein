@@ -30,15 +30,15 @@
                                          <!-- {{posts}} -->
                                         {% for posts in posts %}
                                         <div class="single-blog-item">
-                                            <a href="{% url 'blog:blogDetails' %}" class="single-blog-item__single">
+                                            <a href="{% url 'blog:blogDetails' pid=posts.id %}" class="single-blog-item__single">
                                                 <img src="{% static 'img/blog/01.jpg' %}" alt="blog">
                                             </a>
                                             <div class="blog__meta">
                                                 <span class="author"><a href="#"><img src="{% static 'img/icons/user.svg' %}" alt="user"> رسول </a></span>
-                                                <span class="date"><img src="{% static 'img/icons/calendar.svg' %}" alt="calendar">{{posts.published_date}}</span>
+                                                <span class="date"><img src="{% static 'img/icons/calendar.svg' %}" alt="calendar">{{post.published_date}}</span>
                                             </div>
                                             <h4 class="blog-title">
-                                                <a href="#">{{posts.title}}</a>
+                                                <a href="{% url 'blog:blogDetails' pid=posts.id %}">{{posts.title}}</a>
                                             </h4>
                                             <P>{{posts.content}}</P>
                                             
