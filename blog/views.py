@@ -11,4 +11,4 @@ def http_blog(request):
 def http_blogDetails(request,pid):
     posts = get_object_or_404(Post, id=pid)
     context = {'posts':posts}
-    return render(request,'blog/blog-details.html')
+    return render(request,'blog/blog-details.html',context)
